@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/site.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header>
+      
+        <h2> <a href="index.html"><img src="img/Scooter_Logo_50w.png" alt="Scooter's Logo"></a>Scooter's Trail Stop</h2>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="active" style="float:right"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="social">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+    </div>
+</header>
+    <main>
+        <div class="row">
+            <div class="column" >
+                <h3>Contact Form</h3>
+                <p>Please fill out the form below completely to Scooter</p>
+            </div>
+            <div class="column" >
+            <div class="container">
+                <form action="https://formspree.io/mwkoevnl"
+                        method="POST">
+            <fieldset>
+                <legend>Scooter's Contact Form:</legend>
+                    <label for="fname">First Name</label><br>
+                    <input type="text" class="text" id="fname" name="firstname" placeholder="Your name.."><br><br>
+            
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" class="text" id="lname" name="lastname" placeholder="Your last name.."><br><br>
+
+                    <label for="email">Email Address</label><br>
+                    <input type="email" class="text" id="email" name="_replyto" placeholder="Your email.."><br><br>
+
+                    <label for="subject">Subject</label><br>
+                    <select id="subject" name="subject">
+                        <option value="Cafe">Cafe</option>
+                        <option value="Bike Shop">Bike Shop</option>
+                        <option value="Paise">Paise</option>
+                    </select><br><br>
+            
+                    <label for="message">Message</label><br>
+                    <textarea id="message" class="textbox" name="message" placeholder="Write something.."></textarea><br><br>
+            
+                    <input type="submit" value="Submit">
+            </fieldset>
+                </form>
+            </div>
+            </div>
+            <div class="column" >
+                <h3>Directions</h3>
+                <p>Map will go here</p>
+            </div>
+        </div>
+</main>
+    <footer>
+        <p>
+            &copy;<a href="https://tomassetti.net">tomassetti.net</a> 2020
+        </p>
+    </footer>
+    
+</body>
+
+</html>
