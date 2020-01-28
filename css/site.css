@@ -1,0 +1,184 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+
+    background-image: radial-gradient(#145A32, #27AE60, #A9DFBF);    
+    padding: 30px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 35px;
+    border-radius: 12px;
+    text-shadow: 2px 2px 4px #000000;
+    outline-color: #145A32;
+}
+header > h2 {
+    display: inline;
+}
+header > h2 img {
+    
+    margin:0 5px 0 0;
+}
+
+nav {
+ font-size: 16px;
+}
+
+/* Container for flexboxes */
+.row {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+    height: 300px;
+    text-align: center;
+    background-color: #A9DFBF;
+    border: 3px;
+    border-style: inset;
+    border-color: #145A32;
+    border-radius: 12px;
+
+}
+
+/* Style the footer */
+footer {
+  background-image: radial-gradient(#145A32, #27AE60, #A9DFBF);    
+    padding: 10px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 14px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px #000000;
+    outline-color: #145A32;
+}
+footer > p > a {
+    color: whitesmoke;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .row {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        
+    }
+    header > h2 {
+        font-size: 18px;
+    }
+    form textarea {
+        width: 200px;
+        font-size: small;
+    }
+    form select {
+        font-size: small;
+    }
+    .text {
+        width: 50px;
+        font-size: small;
+    }
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;  
+}
+/* Image Gallery CSS */
+div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 180px;
+}
+
+div.gallery:hover {
+        border: 1px solid #777;
+}
+
+div.gallery img {
+        width: 100%;
+        height: auto;
+}
+
+div.desc {
+        padding: 15px;
+        text-align: center;
+}
+
+.fa {
+  padding: 5px;
+  font-size: 8px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.text {
+    width: 200px;
+}
+form textarea {
+    width: 400px;
+    height: 200px;
+}
+form select {
+    width: 100px
+}
