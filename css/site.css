@@ -5,8 +5,14 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #333;
 }
-
+h1, h2 {
+    font-family: Blippo, fantasy;
+}
+h3, h4, h5 {
+    font-family: Marker Felt, fantasy;
+}
 /* Style the header */
 header {
 
@@ -30,21 +36,26 @@ header > h2 img {
 nav {
  font-size: 16px;
 }
+a {
+    color: rgb(4, 41, 19);
+    font-weight: bolder;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
 /* Container for flexboxes */
 .row {
     display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
+    display: flex; /*initiates flexbox*/
+    flex-direction: row; /*user column to have them verticle rows, horizontal orientation is row */
 }
 
-/* Create three equal columns that sits next to each other */
+/* Create three equal columns that sit next to each other */
 .column {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    padding: 10px;
-    height: 300px;
+    padding: 5px;
+    height: auto;
     text-align: center;
     background-color: #A9DFBF;
     border: 3px;
@@ -117,6 +128,20 @@ li a:hover:not(.active) {
 
 .active {
     background-color: #4CAF50;  
+} 
+
+/* Image Thumbnails */
+.thumb {
+
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    justifly: center;
+}
+
+thumb:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 /* Image Gallery CSS */
 div.gallery {
