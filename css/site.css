@@ -32,6 +32,8 @@ header {
 }
 header > h2 {
     display: inline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
 }
 header > h2 img {
     
