@@ -32,7 +32,7 @@ header > h2 img {
     
     margin:0 5px 0 0;
 }
-
+/* Header Nav CSS */
 nav {
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -42,6 +42,62 @@ a {
     font-weight: bolder;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+/* Footer Nav CSS */
+.footer_nav {
+    
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    
+}
+.footer_nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+    background-color: none;
+}
+
+/* .footer_nav li {
+    clear: left;
+    
+}
+
+.footer_nav a {
+    
+    display:block;
+    color: rgb(221, 241, 224);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.footer_nav a:hover:not(.active) {
+    background-color: #ddd;
+} */
 .a-info {
     font-weight: normal;
     text-decoration: none;
@@ -78,7 +134,7 @@ a {
     padding: 5px;
     height: auto;
     text-align: center;
-    background-color: #A9DFBF;
+    background-color: #e5e4d7;
     border: 3px;
     border-style: inset;
     border-color: #145A32;
@@ -100,6 +156,10 @@ footer {
 footer > p > a {
     color: whitesmoke;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+footer > p > a:hover {
+background-color: #27AE60;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
@@ -124,29 +184,7 @@ footer > p > a {
         font-size: small;
     }
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
 
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #111;
-}
 .info > .row {
     flex-direction: column;
 }
@@ -239,7 +277,26 @@ form select {
     padding: 14px 16px;
     text-decoration: none;
 }
-/* 
-.bikes_ul li a:hover:not(.active) {
-    background-color:#333;
-} */
+.button {
+  background-color: rgb(24, 77, 26); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {
+  
+  color: whitesmoke; 
+  border: 2px solid rgb(135, 228, 138);
+  border-style: ridge;
+  font-family: fantasy;
+}
+.button:hover {
+    background-color: #145A32
+}
