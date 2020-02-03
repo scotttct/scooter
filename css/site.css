@@ -213,5 +213,33 @@ form textarea {
     height: 100px;
 }
 form select {
-    width: 100px
+    width: 100px;
 }
+
+.bikes_ul ul {
+    background-color: darkgreen;
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+    border-color: green;
+    border-radius: 10px;
+    border-style: ridge;
+    border-width: 2px;
+}
+
+.bikes_ul li {
+    float: none;
+    color: whitesmoke;
+}
+
+.bikes_ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* 
+.bikes_ul li a:hover:not(.active) {
+    background-color:#333;
+} */
