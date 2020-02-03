@@ -34,14 +34,35 @@ header > h2 img {
 }
 
 nav {
- font-size: 16px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 a {
     color: rgb(4, 41, 19);
     font-weight: bolder;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.a-info {
+    font-weight: normal;
+    text-decoration: none;
 }
 
+/* Styling for a span for Scooter's */
+.scooters {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    text-shadow: rgb(3, 36, 16);
+    color: #145A32;
+}
+.info p {
+    padding: 10px;
+    
+ 
+}
+.info h5 {
+    font-weight: bolder;
+    font-size: medium;
+}
 /* Container for flexboxes */
 .row {
     display: -webkit-flex;
@@ -78,6 +99,7 @@ footer {
 }
 footer > p > a {
     color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
@@ -125,6 +147,9 @@ li a {
 li a:hover:not(.active) {
     background-color: #111;
 }
+.info > .row {
+    flex-direction: column;
+}
 
 .active {
     background-color: #4CAF50;  
@@ -137,72 +162,55 @@ li a:hover:not(.active) {
     border-radius: 4px;
     padding: 5px;
     width: 150px;
-    justifly: center;
+
 }
 
 thumb:hover {
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
-/* Image Gallery CSS */
-div.gallery {
-        margin: 5px;
-        border: 1px solid #ccc;
-        float: left;
-        width: 180px;
+/* .photo_carousel > .row{
+    flex-direction: row;
 }
-
-div.gallery:hover {
-        border: 1px solid #777;
+.photo_carousel > .column {
+    text-align: center;
+    margin: auto;
 }
-
-div.gallery img {
-        width: 100%;
-        height: auto;
+.pic { 
+    display:block;
+    float:none;
+    text-align: center;
+    width: 400px;
+}*/
+.carousel {
+    margin: auto;
+    width: 50%;
+    height: 100%;
+} 
+.photo_container .row {
+    flex-direction: column;
 }
-
-div.desc {
-        padding: 15px;
-        text-align: center;
+/* CSS for Picture frame for scooter future home photo */
+.future_home {
+    width: 75%;
+    height: auto;
+    border:double;
+    border-color: rgb(3, 36, 16);
 }
-
-.fa {
-  padding: 5px;
-  font-size: 8px;
+/* CSS for Media Buttons */
+ .fa {
+  padding: 10px;
+  font-size: 20px;
   width: 50px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
 }
-
 .fa:hover {
-    opacity: 0.7;
+    opacity: 0.7; */
 }
 
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-.text {
-    width: 200px;
-}
 form textarea {
-    width: 400px;
-    height: 200px;
+    width: 75%;
+    height: 100px;
 }
 form select {
     width: 100px

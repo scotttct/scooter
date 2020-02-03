@@ -1,71 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Photo Carousel</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/site.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <title>Photo Carousel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/site.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-</head>
-<body>
-<header>
-      
-        <h2> <a href="index.html"><img src="img/Scooter_Logo_50w.png" alt="Scooter's Logo"></a>Scooter's Trail Stop</h2>
-    <nav>
+  </head>
+  <body>
+    <header>
+      <nav>
         <ul>
             <li ><a href="index.html">Home</a></li>
-            <li class="active"><a href="photos.html">Photos</a></li>
             <li><a href="about.html">About</a></li>
+            <li class="active"><a href="photos.html">Photos</a></li>
             <li style="float:right"><a href="contact.html">Contact</a></li>
         </ul>
-    </nav>
-    <div class="social">
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-google"></a>
-        <a href="#" class="fa fa-linkedin"></a>
-    </div>
-</header>
-<div class="container">
-  <h2>Scooter's Photo Carousel</h2>  
-  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:75%;">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" >
-      <div class="item active">
-        <img src="img/Meriden Mountain R5.jpg"" alt="Road Riding" style="width:100%; text-align:center;">
-      </div>
-
-      <div class="item">
-        <img src="img/Cockaponset_Chester_Gravel_1.jpg" alt="Gravel Riding" style="width:100%;">
-      </div>
+      </nav>
+      <h2> <a href="index.html"><img src="img/Scooter_Logo_50w.png" alt="Scooter's Logo"></a>Scooter's Trail Stop</h2>
     
-      <div class="item">
-        <img src="img/Kinetic_Stuff.jpg" alt="Indoor Riding" style="width:100%;">
+      <div class="social">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-google"></a>
+          <a href="#" class="fa fa-linkedin"></a>
       </div>
-    </div>
+    </header>
+    <main>
+      <div class="container photo_container">
+        <section class="photo_carousel">
+          <div class="row">
+            <div class="column">
+          <h3><span class="scooters">Scooter's Trail Stop </span></h3>
+          <h2>Scooter's Photo Carousel</h2> 
+          <div class="pic" >
+            <div id="myCarousel" class="carousel slide " data-ride="carousel">
+              <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
+              <!-- Wrapper for slides -->
+                <div class="carousel-inner" >
+                    <div class="item active">
+                      <img src="img/BikeShop_Hang.jpg"" alt="Cafe Bikeshop" style="width:100%;">
+                    </div>
 
-</body>
+                    <div class="item">
+                      <img src="img/doubleshotcyclery_int-18.jpg" alt="Bike Shop" style="width:100%;">
+                    </div>
+                
+                    <div class="item">
+                      <img src="img/Espresso_Bikes1.jpg" alt="Espresso Bikes" style="width:100%;">
+                    </div>
+                  </div>
+
+                <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+            </div>
+            <div class="column">
+              <h3>Scooter's Future Home</h3>
+              <p>Below is a screenshot of an existing building directly off the Legacy Trail in Nakomis, Florida</p>
+              <img class="future_home" src="img/Scooters_Future_Home.png" alt="Scooter's Future Home">
+            </div>
+          </div>
+          
+        </section>
+    </main>
+    <footer>
+      <p>
+        &copy;<a href="https://tomassetti.net">tomassetti.net</a> 2020
+      </p>
+    </footer>
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
+
+<!--Bootstrap-->
+
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  -->
+  </body>
 </html>
