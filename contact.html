@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>CSS Template</title>
+    <title>Contact Scooter's</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/site.css">
@@ -35,11 +35,50 @@
             <div class="column" >
                 <h3>Contact Scooter's</h3>
                 <!-- 595 Church St, Nokomis, FL 34275 -->
-                <p>595 Church St</p>
-                <p>Nokomis, FL 34275</p>
-                <p>Phone: 555-555-5555</p>
+                <a target="_blank" href="img/ScootersTrailStop.png">
+                    <img class="thumb" src="img/ScootersTrailStop.png" alt="Forest" style="width:90%;">
+                </a>
+                <button id="myBtn">Call Scooter's!</button>
+                
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Call Now! <a href="tel:5555555555">555-555-5555</a> </p>
+                    </div>
+                
+                </div>
+                <hr>
+                <h3>Map to Scooter's Trail Stop</h3>
+                <p>Come join us!</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d887.79519393918!2d-82.444926370791!3d27.119115498939955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c35b0f14ffe8f7%3A0x2d0d594fe811ee9!2sLegacy%20Trail!5e0!3m2!1sen!2sus!4v1580743819233!5m2!1sen!2sus"
+                    width="300" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
             <div class="column" >
+                <div class="hours">
+                    <h3>Scooter's Trail Stop Hours</h3>
+                    <h4>Cafe Hours</h4>
+                    <ul>
+                        <li>
+                            Weekday: 5 AM to 6 PM
+                        </li>
+                        <li>
+                            Weekends: 7 AM to 5 PM      
+                        </li>
+                    </ul>
+                    <h4>Bike Shop Hours</h4>
+                    <ul>
+                        <li>
+                            Weekday: 5 AM to 6 PM
+                        </li>
+                        <li>
+                            Weekends: 7 AM to 5 PM
+                        </li>
+                    </ul>
+                </div>
             <div class="container">
                 <form action="https://formspree.io/mwkoevnl"
                         method="POST">
@@ -56,26 +95,24 @@
 
                     <label for="subject">Subject</label><br>
                     <select id="subject" name="subject">
+                        <option value="--Select One--" selected disabled>--Select One--</option>
+                        <option value="Paise">Paise</option>
                         <option value="Cafe">Cafe</option>
                         <option value="Bike Shop">Bike Shop</option>
-                        <option value="Paise">Paise</option>
+                        
                     </select><br><br>
             
                     <label for="message">Message</label><br>
                     <textarea id="message" class="textbox" name="message" placeholder="Write something.."></textarea><br><br>
                     <input type="hidden" name="_next" value="https://scotttct.github.io/scooter/">
-                    <input type="submit" value="Submit">
+                    <input class="submit" type="submit" value="Submit">
             </fieldset>
                 </form>
             </div>
             </div>
-            <div class="column" >
-                <h3>Map to Scooter's Trail Stop</h3>
-                <p>Come a join us!</p>
-                <iframe
-                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d887.79519393918!2d-82.444926370791!3d27.119115498939955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c35b0f14ffe8f7%3A0x2d0d594fe811ee9!2sLegacy%20Trail!5e0!3m2!1sen!2sus!4v1580743819233!5m2!1sen!2sus"
-                     width="300" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-            </div>
+            <!-- <div class="column" >
+                
+            </div> -->
         </div>
 </main>
     <footer>
@@ -89,6 +126,33 @@
             &copy;<a href="https://tomassetti.net">tomassetti.net</a> 2020
         </p>
     </footer>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
     
 </body>
 
