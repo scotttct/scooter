@@ -15,14 +15,15 @@
 
     <header>
         <nav>
-
-            <ul>
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="photos.html">Photos</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-
+            <div class="topnav" id="js-Topnav">
+                <a class="active" href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="Photos.html">Photos</a>
+                <a href="contact.html">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
         </nav>
         <h2> <a href="index.html"><img class="logo" src="img/Scooter_Logo_50w.png" alt="Scooter's Logo"></a> Scooter's Trail Stop</h2>
   
@@ -38,7 +39,7 @@
         <div class="row" style="font-stretch: condensed">
             <div class="column" >
                 <a target="_blank" href="img/Espresso_Bikes.jpg">
-                    <img class="thumb" src="img/Espresso_Bikes.jpg" alt="Forest" style="width:150px;">
+                    <img class="thumb" src="img/Espresso_Bikes.jpg" alt="Forest">
                 </a>
 
                 <h3>Scooter's Trail Stop: Bike Shop & Cafe</h3>
@@ -51,7 +52,7 @@
             </div>
             <div class="column" >
                 <a target="_blank" href="img/Cafe1.jpg">
-                    <img class="thumb" src="img/Cafe1.jpg" alt="Forest" style="width:150px;">
+                    <img class="thumb" src="img/Cafe1.jpg" alt="Forest">
                 </a>
 
                 <h3>Scooter's Cafe</h3>
@@ -62,7 +63,7 @@
             </div>
             <div class="column" >
                 <a target="_blank" href="img/BikeShop_Hang.jpg">
-                    <img class="thumb" src="img/BikeShop_Hang.jpg" alt="Forest" style="width:150px;">
+                    <img class="thumb" src="img/BikeShop_Hang.jpg" alt="Forest">
                 </a>
                 <h3>Scooter's Bike Shop</h3>
                 <p>Scooter's Bike Shop is located within Scooter's Trail Stop.  Here you will find Bikes to rent or buy. Bicycle
@@ -75,17 +76,17 @@
 </main>
 
     <footer>
-        <p>
+        <div class="footernav">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="Photos.html">Photos</a>
             <a href="contact.html">Contact</a>
-        </p>
+        </div>
         <p>
             &copy;<a href="https://tomassetti.net">tomassetti.net</a> 2020
         </p>
     </footer>
-    
+    <script src="js/script.js"></script>
 </body>
 
 </html>
