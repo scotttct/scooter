@@ -114,13 +114,18 @@ li a:hover:not(.active) {
     font-weight: normal;
     text-decoration: none;
 }
-
+/* Div for items for about page to center */
+.box {
+    display:block;
+    text-align: center;
+}
 /* Styling for a span for Scooter's */
 .scooters {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bolder;
     text-shadow: rgb(3, 36, 16);
     color: #145A32;
+
 }
 .info p {
     padding: 10px;
@@ -156,7 +161,7 @@ li a:hover:not(.active) {
 }
 /* Style the footer */
 footer {
-  background-image: radial-gradient(#145A32, #27AE60, #A9DFBF);    
+    background-image: radial-gradient(#145A32, #27AE60, #A9DFBF);    
     padding: 10px;
     text-align: center;
     color: whitesmoke;
@@ -212,7 +217,7 @@ footer a:hover {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
-    width: 150px;
+    width: 50%;
 
 }
 
@@ -288,14 +293,15 @@ form select {
 .bikes_ul ul {
     background-color: darkgreen;
     margin: 0;
-    padding: 5px;
+    padding: 20px;
+    
     
 
 }
 
 .bikes_ul li {
     float: none;
-    color: whitesmoke;
+    color: black;
 }
 
 .bikes_ul li a {
@@ -305,17 +311,8 @@ form select {
     padding: 14px 16px;
     text-decoration: none;
 }
-.button {
-  background-color: rgb(24, 77, 26); /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+.button1 {
+  margin-top: 20px;
 }
 
 button, .submit {
