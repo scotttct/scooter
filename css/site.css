@@ -242,7 +242,9 @@ thumb:hover {
 
 /* CSS for Media Buttons */
 .social {
-    display: block;
+
+    position: relative;
+    text-align: end;
     padding: 1em;
     padding-bottom: 0rem;
     
