@@ -115,10 +115,7 @@ li a:hover:not(.active) {
     text-decoration: none;
 }
 /* Div for items for about page to center */
-.box {
-    display:block;
-    text-align: center;
-}
+
 /* Styling for a span for Scooter's */
 .scooters {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -149,6 +146,7 @@ li a:hover:not(.active) {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
+
     height: auto;
     text-align: center;
     background-color: white;
