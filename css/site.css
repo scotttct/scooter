@@ -146,7 +146,7 @@ li a:hover:not(.active) {
     flex: 1;
     height: auto;
     text-align: center;
-    background-color: whitesmoke;
+    background-color: white;
     padding: 1em;
     margin:1em;
     margin-top: 0rem;
@@ -235,10 +235,7 @@ thumb:hover {
     border:double;
     border-color: rgb(3, 36, 16);
 }
-/* .car, .pic {
-    width: 100%;
-    padding: 1em;
-} */
+
 
 /* CSS for Media Buttons */
 .social {
@@ -262,12 +259,27 @@ thumb:hover {
     color: #4CAF50;
     text-shadow: 5px ;
 }
+
+.hours {
+    display:block
+
+}
+
+.col2 {
+    width: 1em;
+}
+.contact {
+    width: 90%;
+}
+/* Form info */
+
 .text {
     width: 75%;
 }
+
 form textarea {
     width: 75%;
-    height: 100px;
+    height: 200px;
 }
 form select {
     width: 75%;
@@ -277,11 +289,8 @@ form select {
     background-color: darkgreen;
     margin: 0;
     padding: 5px;
-    overflow: hidden;
-    border-color: green;
-    border-radius: 10px;
-    border-style: ridge;
-    border-width: 2px;
+    
+
 }
 
 .bikes_ul li {
